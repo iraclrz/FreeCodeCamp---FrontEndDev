@@ -68,26 +68,32 @@
     <form action="https://freecatphotoapp.com/submit-cat-photo">
         <div class="row">
             <div class="col-xs-6">
-                <label><input type="radio" name="indoor-outdoor" class="form-control"> Indoor</label>
+                <label><input type="radio" name="indoor-outdoor"> Indoor</label>
             </div>
             <div class="col-xs-6">
-                <label><input type="radio" name="indoor-outdoor" class="form-control"> Outdoor</label>
+                <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
             </div>
         </div>
 
         <div class="row">
             <div class="col-xs-4">
-                <label><input type="checkbox" name="personality" class="form-control"> Loving</label>
+                <label><input type="checkbox" name="personality"> Loving</label>
             </div>
             <div class="col-xs-4">
-                <label><input type="checkbox" name="personality" class="form-control"> Lazy</label>
+                <label><input type="checkbox" name="personality"> Lazy</label>
             </div>
             <div class="col-xs-4">
-                <label><input type="checkbox" name="personality" class="form-control"> Crazy</label>
+                <label><input type="checkbox" name="personality"> Crazy</label>
             </div>
         </div>
-        <input type="text" class="form-contro" placeholder="cat photo URL" required>
-        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+        <div class="row">
+            <div class="col-xs-7">
+                <input type="text" class="form-control" placeholder="cat photo URL" required>
+            </div>
+            <div class="col-xs-5">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+            </div>
+        </div>
     </form>
 </div>
 
