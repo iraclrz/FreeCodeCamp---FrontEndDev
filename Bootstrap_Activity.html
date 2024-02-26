@@ -40,10 +40,12 @@
     <!-- Script to add bounce animation -->
     <script>
         $(document).ready(function(){
-            $("button").addClass("animated");
-            $(".btn").addClass("shake");
-            $("#target1").addClass("btn-primary");
-            $("button").removeClass("btn-default"); //remove the btn-default class from all of our button elements.
+            $("#target1").css("color", "red");
+            $("#target1").prop("disabled", true)
+            //$("button").addClass("animated");
+            //$(".btn").addClass("shake");
+            //$("#target1").addClass("btn-primary");
+            //$("button").removeClass("btn-default"); //remove the btn-default class from all of our button elements.
             //$("button").addClass("animate__animated animate__bounce");
             //$(".well").addClass("animate__animated animate__shakeX");
             //$("#target3").addClass("animate__animated animate__fadeOut");
