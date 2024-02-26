@@ -1,11 +1,36 @@
+$text-color: red; // Define the variable before using it
+
 .header {
     text-align: center;
 }
-  
+
 .blog-post, h2 {
-    color: $text-color;
+    color: $text-color; // Use the defined variable
 }
 
-$text-color: red;
+.blog-post {
+    h1 {
+        text-align: center;
+        color: blue;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+#awesome {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    @include border-radius(15px); // Using the mixin to give border radius
+}
+
 
   
