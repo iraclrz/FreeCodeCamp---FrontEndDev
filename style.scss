@@ -1,4 +1,5 @@
 $text-color: red; // Define the variable before using it
+$colors: (color1: blue, color2: black, color3: red);
 
 .header {
     text-align: center;
@@ -54,5 +55,21 @@ $text-color: red; // Define the variable before using it
     @include border-stroke(medium);
 }
 
+@for $j from 1 through 6 {
+    .text-#{$j} {
+        font-size: 15px * $j
+    }
+}
+
+@each $key, $color in $colors {
+    .#{$color}-bg {
+        background-color: $color;
+    }
+}
+
+div {
+    height: 200px;
+    width: 200px;
+}
 
   
