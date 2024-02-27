@@ -1,5 +1,5 @@
 $text-color: red; // Define the variable before using it
-$colors: (color1: blue, color2: black, color3: red);
+$colors: (color1: blue, color2: black, color3: red); //Defining the variable on top (upper part) of SASS file.
 
 .header {
     text-align: center;
@@ -61,6 +61,14 @@ $colors: (color1: blue, color2: black, color3: red);
     }
 }
 
+$x: 1;
+@while $x < 6 {
+    .text-#{$x} {
+        font-size: 15px * $x
+    } 
+    $x: $x + 1;
+}
+
 @each $key, $color in $colors {
     .#{$color}-bg {
         background-color: $color;
@@ -72,4 +80,18 @@ div {
     width: 200px;
 }
 
+h3 {
+    text-align: center;
+}
+
+.info {
+    width: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.info-important {
+    @extend .info;
+    background-color: magenta;
+}
   
